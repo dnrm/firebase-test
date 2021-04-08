@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#app {
+    min-height: 70vh;
+}
+
+#signOutBtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    margin: 5px;
+}
+
+#userDetails {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    margin: 5px;
+}
+
+li {
+    color: black;
+}
+
+#whensignedout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+#whensignedin {
+    width: 90%;
+}
+
+#flex {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+}
+
+#createThing {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    margin: 0 auto 15px auto;
+    width: 80%;
+}
+
+#createThing:hover {
+    background: rgb(200, 200, 200);
+}
+
+@media only screen and (min-width: 1000px) {
+    #app {
+        padding-left: 450px;
+        padding-right: 450px;
+    }
+
+    #createThing {
+        width: 20%;
+    }
+}
