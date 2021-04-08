@@ -49,6 +49,7 @@ auth.onAuthStateChanged(user => {
                 name: document.getElementById('songInput').value, 
                 createdAt: serverTimestamp()
             });
+            document.getElementById('songInput').value = '';
         }
 
         unsubscribe = thingsRef
