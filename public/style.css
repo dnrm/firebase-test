@@ -11,6 +11,9 @@ body {
 
 #app {
     min-height: 70vh;
+    padding: 80px 0;
+    display: grid;
+    place-items: center;
 }
 
 #signOutBtn {
@@ -29,6 +32,7 @@ body {
 
 li {
     color: black;
+    width: 100%;
 }
 
 #whensignedout {
@@ -39,20 +43,9 @@ li {
     text-align: center;
 }
 
-#app {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-direction: column;
-}
-
 #whensignedin {
-    width: 90%;
-}
-
-#flex {
     width: 100%;
+    max-width: 768px;
 }
 
 input {
@@ -61,23 +54,15 @@ input {
 }
 
 #createThing {
-    position: absolute;
-    bottom: 0;
+    width: auto;
     display: block;
-    margin: 0 auto 15px auto;
-    width: 80%;
 }
 
 #createThing:hover {
     background: rgb(200, 200, 200);
 }
 
-@media only screen and (min-width: 1000px) {
-    #app {
-        padding-left: 450px;
-        padding-right: 450px;
-    }
-
+@media only screen and (min-width: 1200px) {
     #createThing {
         width: 20%;
     }
